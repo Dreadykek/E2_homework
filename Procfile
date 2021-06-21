@@ -1,1 +1,1 @@
-web: gunicorn newBlog.wsgi
+web: gunicorn sendEmailProject.wsgi
