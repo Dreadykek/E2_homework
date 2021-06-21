@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% for n in massage_list %}
+        <p>{{ n.from_email }} {{ n.text }} {{ n.to_email }} {{ n.status }}</p>
+    {% endfor %}
+</body>
+</html>

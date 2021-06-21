@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отправка сообщения</title>
+</head>
+<body>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <label>Введите текст письма</label>
+        <input  name="text" type="text">
+        <label>Введите Email получателя</label>
+        <input  name="to_email" type="text">
+        <label>Введите задержку отправки (в секундах)</label>
+        <input  name="delay" type="text">
+        <button>Отправить</button>
+    </form>
+</body>
+</html>
